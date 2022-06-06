@@ -1,14 +1,50 @@
 body {
     display: flex;
+    font-family: sans-serif;
+}
+
+
+.left-container {
+    flex: 1.5 1 0%;
 }
 
 img {
-    width: 300px;
+    object-fit: contain;
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
 }
 
-.container-right {
+.right-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    flex: 2 1 0%;
+    background-color: #f3f3f3;
+}
+
+.form {
+    background-color: white;
+    padding: 16px;
+    box-shadow: black 0px 0px 0px 0px;
+}
+
+form {
+    display: flex;
+    gap: 64px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.right-container button {
+    align-self: flex-start;
+}
+
+.form-container .content-container {
+    display: flex;
+    flex-direction: column;
 }
